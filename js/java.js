@@ -25,16 +25,16 @@ postHtml = `
 <article>
 <header>
     <h1>
-        textin
+        ${title}
     </h1>
 </header>
 <section>
-    <div>texto</div>
-    <div>texto</div>
+    <div>${excerpt}</div>
+    <div>${body}</div>
 </section>
 <footer>
     <ul>
-        <li>texto</li>
+        ${tags.map(tag => `<li>${tag}</li>`).join("\n")}
     </ul>
 </footer>
 </article>`
